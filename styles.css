@@ -1,0 +1,121 @@
+/* Full-page gradient background */
+body {
+    background: linear-gradient(180deg, #A0D6D4 0%, #71B3C9 100%);
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+/* Translucent panel theme - reusable class */
+.translucent-panel {
+    background-color: rgba(192, 192, 192, 0.20) !important;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat column - narrow and centered */
+.col-lg-5 {
+    max-width: 100%;
+}
+
+@media (min-width: 992px) {
+    .col-lg-5 {
+        max-width: 45%;
+        margin: 0 auto;
+    }
+}
+
+/* Skip to main content link */
+.skip-link {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-link:focus {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1rem;
+    background: rgba(128, 128, 128, 0.9);
+    color: white;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    z-index: 1000;
+}
+
+/* Avatar canvas placeholder */
+.avatar-placeholder {
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgba(128, 128, 128, 0.6);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Results content styling */
+.results-content {
+    min-height: 200px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Accordion styling within translucent panel */
+.translucent-panel .accordion-button {
+    background-color: rgba(192, 192, 192, 0.15);
+}
+
+.translucent-panel .accordion-button:not(.collapsed) {
+    background-color: rgba(192, 192, 192, 0.3);
+}
+
+/* Link styling in results */
+#resultsContent a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+#resultsContent a:hover {
+    text-decoration: underline;
+}
+
+/* Badge and status styling */
+#runStatus {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+}
+
+/* Textarea and button improvements */
+textarea.form-control {
+    resize: vertical;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 0.25rem rgba(128, 128, 128, 0.25);
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 991px) {
+    .card.translucent-panel {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
