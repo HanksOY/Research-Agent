@@ -1,4 +1,9 @@
+
+
 # Project Proposal: Multidomain information search Agent with Voice + Avatar
+
+<img width="1969" height="722" alt="image" src="https://github.com/user-attachments/assets/b0f5a30b-ddcc-43d8-86c1-5b5bfb494b88" />
+
 
 ## Team
 
