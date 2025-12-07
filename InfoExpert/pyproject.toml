@@ -1,0 +1,12 @@
+[project]
+name = "infoexpert"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "livekit-agents[google,silero,tavus,turn-detector]~=1.2",
+    "livekit-plugins-noise-cancellation~=0.2",
+    "python-dotenv>=1.2.1",
+    "tavily-python>=0.7.13",
+]
